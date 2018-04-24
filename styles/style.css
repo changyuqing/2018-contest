@@ -1,0 +1,219 @@
+@media screen and (max-width:944px){
+  .container {
+    margin: 50px auto;
+    width: 400px;
+    height: 400PX;
+    position: relative;
+  }
+}
+@media screen and (min-width:944px){
+  .container {
+    margin: 50px auto;
+    width: 500px;
+    height: 500PX;
+    position: relative;
+  }
+}
+
+.small{
+  transform: scale(0);
+}
+.board {
+  padding: 2%;
+  border-radius: 2%;
+  background-color: #b2a598;
+  width: 96%;
+  height: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  position: relative; 
+  z-index: 1; 
+}
+
+.column {
+  flex-basis: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 20%;
+  height: 80%;
+  margin: 2%;
+  border-radius: 10px;
+  background-color: #c6baae;
+}
+
+.cells {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 50px;
+}
+@keyframes appear{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+@keyframes marged{
+  0%{
+    transform: scale(0)
+  }
+  80%{
+    transform: scale(1.2)
+  }
+  100%{
+    transform: scale(1)
+  }
+}
+.appearCell{
+  animation: appear 400ms ease 500ms 1 normal both;
+}
+.margeCell{
+  animation: marged 400ms ease 500ms 1 normal both;
+}
+
+.cell{
+  width:19.2%;
+  height: 19.2%;
+  border-radius: 10px;
+  position: absolute;
+  transition: all .5s ease-out;
+  
+  text-align: center;
+  line-height: 1.5;
+}
+/* 位置 */
+.position-0-0{
+  top: 4%;
+  left: 4%;
+  /* transform: translate(4%,4%); */
+  /* transform: translateX(4%); */
+}
+.position-0-1{
+  top:4%;
+  left: 28.2%;
+}
+.position-0-2{
+  top:4%;
+  left: 52.4%;
+}
+.position-0-3{
+  top:4%;
+  left: 76.8%;
+}
+.position-1-0{
+  top:28%;
+  left: 4%;
+}
+.position-1-1{
+  top:28%;
+  left: 28.2%;
+}
+.position-1-2{
+  top:28%;
+  left: 52.4%;
+}
+.position-1-3{
+  top:28%;
+  left: 76.8%;
+}
+.position-2-0{
+  top:52%;
+  left: 4%;
+}
+.position-2-1{
+  top:52%;
+  left: 28.2%;
+}
+.position-2-2{
+  top:52%;
+  left: 52.4%;
+}
+.position-2-3{
+  top:52%;
+  left: 76.8%;
+}
+.position-3-0{
+  top:76%;
+  left: 4%;
+}
+.position-3-1{
+  top:76%;
+  left: 28.2%;
+}
+.position-3-2{
+  top:76%;
+  left: 52.4%;
+}
+.position-3-3{
+  top:76%;
+  left: 76.8%;
+}
+/* 颜色 */
+
+.num-2 {
+  background-color: #eee4da;
+}
+
+.num-4 {
+  background-color: #ede0c8;
+}
+
+.num-8 {
+  background-color: #f2b179;
+}
+
+.num-16 {
+  background-color: #f59563;
+}
+
+.num-32 {
+  background-color: #f67c5f;
+}
+
+.num-64 {
+  background-color: #f65e3b;
+}
+
+.num-128 {
+  background-color: #edcf72;
+}
+
+.num-256 {
+  background-color: #edcc61;
+}
+
+.num-512 {
+  background-color: #edc850;
+}
+
+.num-1024 {
+  background-color: #edc53f;
+}
+
+.num-2048 {
+  background-color: #edc22e;
+  box-shadow: 4% #edc850;
+  font-size: 12px;
+}
+
+#message{
+  width: 50%;
+  height: 25%;
+  margin: 0 auto;
+  font-size: 25px;
+  position: absolute;
+}
+#score{
+  font-size: 35px;
+}
